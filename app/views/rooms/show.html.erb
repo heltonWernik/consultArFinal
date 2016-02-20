@@ -15,26 +15,31 @@
 			<div class="col-md-8">
 				<div class="row">
 					<div class="col-md-3 text-center">
-						<%= image_tag avatar_url(@room.user), class: "img-circle avatar-large" %><br><br>
-						<%= @room.user.fullname %>
+						<%= image_tag avatar_url(@room.user), class: "img-circle avatar-full" %><br><br>
+						<h5>Dr(a). <%= @room.user.fullname %></h5>
+						crm: <%= @room.bath_room %>
 					</div>
-
+					<br>
 					<div class="col-md-9">
 						<h4><%= @room.listing_name %></h4>
+						<h4><%= @room.home_type %></h4>
+						<h4><%=  %></h4>
+						<br><br><br><br>
 						<%= @room.address %>
 
-						<div class="row text-center row-space-1">
+
+<!-- 						<div class="row text-center row-space-1">
 							<div class="col-sm-3">
-								<i class="fa fa-home fa-2x"></i>
+								<i class="fa fa-user-md  fa-2x"></i>
 							</div>
 							<div class="col-sm-3">
-								<i class="fa fa-users fa-2x"></i>
+								<i class="fa fa-user-md fa-2x"></i>
 							</div>
 							<div class="col-sm-3">
-								<i class="fa fa-bed fa-2x"></i>
+								<i class="fa fa-user-md fa-2x"></i>
 							</div>
 							<div class="col-sm-3">
-								<i class="fa fa-ship fa-2x"></i>
+								<i class="fa fa-user-md fa-2x"></i>
 							</div>
 						</div>
 
@@ -43,15 +48,15 @@
 								<%= @room.home_type %>
 							</div>
 							<div class="col-sm-3">
-								<%= @room.accommodate %> <%= @room.accommodate > 1? "Guests" : "Guest" %>
+								<%= @room.accommodate %>
 							</div>
 							<div class="col-sm-3">
-								<%= @room.bed_room %> <%= @room.bed_room > 1? "Bedrooms" : "Bedroom" %>
+								<%= @room.bed_room %>
 							</div>
 							<div class="col-sm-3">
-								<%= @room.bath_room %> <%= @room.bath_room > 1? "Bathrooms" : "Bathroom" %>
+								<%= @room.bath_room %>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
@@ -66,13 +71,13 @@
 		<!-- About -->
 		<div class="row">
 			<div class="col-md-12">
-				<h2>About This Listing</h2>
+				<h4>Experiencia profissional</h4>
 				<p><%= @room.summary %></p>
 			</div>
 		</div>
 
 		<!-- Amenities -->
-		<div class="row">
+<!-- 		<div class="row">
 			<div class="col-md-2">
 				<p>Amentities</p>
 			</div>
@@ -91,16 +96,16 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Carousel -->
-		<div class="row">
+<!-- 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				  
-					<% if @photos %>
+					<% if @photos %> -->
 						<!-- Indicators -->
-				    <ol class="carousel-indicators">
+<!-- 				    <ol class="carousel-indicators">
 							<% @photos.each do |photo| %>
 								<li data-target="#myCarousel" data-slide-to="<%= photo.id %>"></li>
 							<% end %>	
@@ -127,7 +132,7 @@
 				  </a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<br>
 		<hr>

@@ -10,26 +10,35 @@
 				<div class="row">
 					<div class="col-md-4 select">
 						<div class="form-group">
-							<label>Home Type</label>
-							<%= f.select :home_type, [["Apartment","Apartment"], ["House","House"], ["Bed & Breakfast","Bed & Breakfast"]], id: "home_type", prompt: "Select...", class: "form-control" %>
+							<label>Especialidade</label>
+							<%= f.select :listing_name, [["Acunputura","Acunputura"], ["Alergista","Alergista"], ["Anestesiologia","Anestesiologia"], ["Angiorradiologista","Angiorradiologista"]], id: "home_type", prompt: "Select...", class: "form-control" %>
 						</div>
 					</div>
 
+				<div class="row">
 					<div class="col-md-4 select">
+						<div class="form-group">
+							<label>especialidade</label>
+							<%= f.select :home_type, [["Acunputura","Acunputura"], ["",""], ["Alergista","Alergista"], ["Anestesiologia","Anestesiologia"], ["Angiorradiologista","Angiorradiologista"]], id: "home_type", prompt: "Select...", class: "form-control" %>
+						</div>
+					</div>
+										
+
+<!-- 					<div class="col-md-4 select">
 						<div class="form-group">
 							<label>Room Type</label>
 							<%= f.select :room_type, [["Entire","Entire"], ["Private","Private"], ["Shared","Shared"]],prompt: "Select...", class: "form-control" %>
 						</div>
-					</div>
-
+					</div> -->
+<!-- 
 					<div class="col-md-4 select">
 						<div class="form-group">
 							<label>Accommodate</label>
 							<%= f.select :accommodate, [["1",1], ["2",2], ["3",3], ["4",4], ["5",5], ["6+",6]], prompt: "Select...", class: "form-control" %>
 						</div>
 					</div>
-				</div>
-
+				</div> -->
+<!-- 
 				<div class="row">
 					<div class="col-md-4 select">
 						<div class="form-group">
@@ -37,37 +46,45 @@
 							<%= f.select :bed_room, [["1",1], ["2",2], ["3",3], ["4+",4]], prompt: "Select...", class: "form-control" %>
 						</div>
 					</div>
-
-					<div class="col-md-4 select">
-						<div class="form-group">
-							<label>Bathrooms</label>
-							<%= f.select :bath_room, [["1",1], ["2",2], ["3",3], ["4+",4]], prompt: "Select...", class: "form-control" %>
-						</div>
-					</div>
+ -->
 				</div>
 
-				<div class="row">
+<!-- 				<div class="row">
 					<div class="form-group">
 						<label>Listing name</label>
 						<%= f.text_field :listing_name, placeholder: "Be clear and descriptive", class: "form-control" %>
 					</div>
+				</div> -->
+
+				<div class="row">
+					<div class="form-group">
+						<label>Número de conselho</label>
+						<%= f.text_field :bath_room, rows: 5, placeholder: "Tell about your house", class: "form-control" %>
+					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group">
-						<label>Summary</label>
+						<label>Telefone</label>
+						<%= f.text_field :bed_room, rows: 5, placeholder: "Tell about your house", class: "form-control" %>
+					</div>
+				</div>											
+
+				<div class="row">
+					<div class="form-group">
+						<label>Experiencia profissional</label>
 						<%= f.text_area :summary, rows: 5, placeholder: "Tell about your house", class: "form-control" %>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group">
-						<label>Address</label>
+						<label>Endereço</label>
 						<%= f.text_field :address, placeholder: "What is your address?", class: "form-control" %>
 					</div>
 				</div>
 
-				<div class="row">
+<!-- 				<div class="row">
 					<div class="col-md-4">
 						<div class="form-group">
 							<%= f.check_box :is_tv %> TV
@@ -88,7 +105,7 @@
 							<%= f.check_box :is_air %> Air Conditioning
 						</div>
 					</div>	
-				</div>	
+				</div>	 -->
 
 				<div class="row">
 					<div class="col-md-4">
