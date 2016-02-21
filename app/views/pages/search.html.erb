@@ -21,7 +21,7 @@
 	        <% @arrRooms.each do |room| %>	
 		        var marker = new google.maps.Marker({
 		        	position: new google.maps.LatLng(<%= room.latitude %>, <%= room.longitude %>),
-		        	title: "AirAlien" 
+		        	title: "ConsultAr" 
 		        });
 
 		        marker.setMap(map);
@@ -58,7 +58,7 @@
 
 					<hr>
 
-					<div class="row">
+<!-- 					<div class="row">
 						<div class="col-md-4">
 							<%= check_box_tag "q[room_type_eq_any][]", "Entire" %> Entire Room
 						</div>
@@ -68,7 +68,7 @@
 						<div class="col-md-4">
 							<%= check_box_tag "q[room_type_eq_any][]", "Shared" %> Shared Room
 						</div>
-					</div>
+					</div> -->
 
 					<hr>
 
@@ -95,9 +95,9 @@
 						</div>
 					</div>
 
-					<hr>
+<!-- 					<hr> -->
 
-					<div class="row">
+<!-- 					<div class="row">
 						<div class="col-md-4">
 							<%= check_box_tag "q[is_tv_eq]", true %> TV
 						</div>
@@ -113,7 +113,7 @@
 						<div class="col-md-4">
 							<%= check_box_tag "q[is_air_eq]", true %> Air Conditioning
 						</div>
-					</div>
+					</div> -->
 
 					<br>
 

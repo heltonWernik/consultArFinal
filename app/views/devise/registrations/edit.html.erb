@@ -16,7 +16,7 @@
             <%= render 'shared/devisemes' %>
 
             <div class="form-group">
-              <%= f.text_field :fullname, autofocus: true, :placeholder => "Full Name", :class => 'form-control' %>
+              <%= f.text_field :fullname, autofocus: true, :placeholder => "Nome", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
@@ -24,7 +24,7 @@
             </div>
 
             <div class="form-group">
-              <%= f.text_field :phone_number, :placeholder => "Phone Number", :class => 'form-control' %>
+              <%= f.text_field :phone_number, :placeholder => "Telefone", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
@@ -36,15 +36,15 @@
             <% end %>
 
             <div class="form-group">
-              <%= f.password_field :password, autocomplete: "off", :placeholder => "New Password (leave blank if you don't want to change it)", :class => 'form-control' %>
+              <%= f.password_field :password, autocomplete: "off", :placeholder => "Nova Senha (Deixe em branco para não mudar)", :class => 'form-control' %>
             </div>
 
             <div class="form-group">
-              <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "Confirm Password", :class => 'form-control' %>
+              <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "confirme nova senha", :class => 'form-control' %>
             </div>
             
             <div class="actions">
-              <%= f.submit "Save", :class => "btn btn-primary" %>
+              <%= f.submit "Salvar", :class => "btn btn-primary" %>
             </div>
           <% end %>
         </div>
